@@ -1,2 +1,0 @@
-gcc-ar qc libTransfers.a  CMakeFiles/Transfers.dir/transfers/BlockchainSynchronizer.cpp.o CMakeFiles/Transfers.dir/transfers/SynchronizationState.cpp.o CMakeFiles/Transfers.dir/transfers/TransfersConsumer.cpp.o CMakeFiles/Transfers.dir/transfers/TransfersContainer.cpp.o CMakeFiles/Transfers.dir/transfers/TransfersSubscription.cpp.o CMakeFiles/Transfers.dir/transfers/TransfersSynchronizer.cpp.o
-gcc-ranlib libTransfers.a

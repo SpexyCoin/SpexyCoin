@@ -23,7 +23,7 @@ namespace CryptoNote
         const uint64_t DIFFICULTY_TARGET                        =                               30; // seconds
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY                             =   UINT64_C(100'000'000'00000000); // 100 million SPEXC
+        const uint64_t MONEY_SUPPLY                             =   UINT64_C(101'000'000'00000000); // 100 million SPEXC
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER              =                    1'000'000'000;
         const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE           =                      500'000'000;
@@ -47,7 +47,7 @@ namespace CryptoNote
         const unsigned EMISSION_SPEED_FACTOR                    =                               23;
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
-        const uint64_t GENESIS_BLOCK_REWARD                     =                     MONEY_SUPPLY;
+        const uint64_t GENESIS_BLOCK_REWARD                     =              100'000'000'00000000;
         const char     GENESIS_COINBASE_TX_HEX[] = "012801ff0001808084fea6dee111026527c352979f0d11b0c132f2af549d7ccd82dfc6a9e91ba315e2fd4783e058f52101eebd053805c74c3f8351b46c86d063fef711b3ae61004eba5097d2da6af6bd56";
 
         static_assert(sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
@@ -66,7 +66,7 @@ namespace CryptoNote
         const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT                  =                                               8;
 
         /* Fixed fee */
-        const uint64_t MINIMUM_FEE                                       =                            UINT64_C(1'00000000);
+        const uint64_t MINIMUM_FEE                                       =                            UINT64_C(0'00050000);
 
         /* Fee per byte */
         const uint64_t FEE_PER_BYTE_V1_HEIGHT                            =                     CRYPTONOTE_MAX_BLOCK_NUMBER;
