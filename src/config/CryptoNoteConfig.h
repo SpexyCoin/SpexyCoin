@@ -48,7 +48,7 @@ namespace CryptoNote
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
         const uint64_t GENESIS_BLOCK_REWARD                     =                     MONEY_SUPPLY;
-        const char     GENESIS_COINBASE_TX_HEX[] = "012801ff0001808084fea6dee111028a3c19e0dfe70c09c311586f9d7b15e77213dbb1b650a06019f4b2abb15a7bfb210109b346785192431e659a5053302c157f7b4a5a50faa7d4a624cd8ffd53b942bb";
+        const char     GENESIS_COINBASE_TX_HEX[] = "012801ff0001808084fea6dee111026527c352979f0d11b0c132f2af549d7ccd82dfc6a9e91ba315e2fd4783e058f52101eebd053805c74c3f8351b46c86d063fef711b3ae61004eba5097d2da6af6bd56";
 
         static_assert(sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
