@@ -1,0 +1,2 @@
+gcc-ar qc libNigel.a  CMakeFiles/Nigel.dir/nigel/Nigel.cpp.o
+gcc-ranlib libNigel.a

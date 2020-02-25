@@ -1,0 +1,2 @@
+gcc-ar qc libLogger.a  CMakeFiles/Logger.dir/logger/Logger.cpp.o
+gcc-ranlib libLogger.a

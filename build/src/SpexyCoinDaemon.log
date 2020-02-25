@@ -1,0 +1,171 @@
+2020-Feb-25 16:20:07.862905 INFO    [daemon] 
+
+
+ SpexyCoin v1.0.0.0
+ This software is distributed under the General Public License v3.0
+
+ Copyright 2020, The SpexyCoin Developers
+
+ Additional Copyright(s) may apply, please see the included LICENSE file for more information.
+ If you did not receive a copy of the LICENSE, please visit:
+ https://github.com/spexycoin/spexycoin/blob/master/LICENSE
+
+
+2020-Feb-25 16:20:07.863444 INFO    [daemon] Program Working Directory: "/home/kevin/SpexyCoin/build/src"
+2020-Feb-25 16:20:07.863766 INFO    [daemon] Loading Checkpoints for faster initial sync...
+2020-Feb-25 16:20:07.863897 INFO    [daemon] Loaded 0 default checkpoints
+2020-Feb-25 16:20:07.864052 INFO    [RocksDBWrapper] Opening DB in /home/kevin/.SpexyCoin/DB
+2020-Feb-25 16:20:08.094829 INFO    [RocksDBWrapper] DB opened in /home/kevin/.SpexyCoin/DB
+2020-Feb-25 16:20:08.095479 INFO    [daemon] Initializing core...
+2020-Feb-25 16:20:08.113693 INFO    [daemon] Core initialized OK
+2020-Feb-25 16:20:08.114319 INFO    [daemon] Initializing p2p server...
+2020-Feb-25 16:20:08.115154 INFO    [node_server] Binding on 0.0.0.0:20440
+2020-Feb-25 16:20:08.115496 INFO    [node_server] Net service bound on 0.0.0.0:20440
+2020-Feb-25 16:20:08.115838 INFO    [node_server] Attempting to add IGD port mapping.
+2020-Feb-25 16:20:09.335605 INFO    [node_server] Added IGD port mapping.
+2020-Feb-25 16:20:09.336019 INFO    [daemon] P2p server initialized OK
+2020-Feb-25 16:20:09.337027 INFO    [daemon] Starting core rpc server on address 127.0.0.1:20441
+2020-Feb-25 16:20:09.337627 INFO    [daemon] Starting p2p net loop...
+2020-Feb-25 16:20:09.337849 INFO    [node_server] Starting node_server
+2020-Feb-25 16:20:31.855667 ERROR   [node_server] Failed to connect to any of seed peers, continuing without seeds
+2020-Feb-25 16:20:46.106848 INFO    [node_server] Stop signal sent, please only EXIT or CTRL+C one time to avoid stalling the shutdown process.
+2020-Feb-25 16:20:46.107101 INFO    [node_server] Stopping NodeServer and its 0 connections...
+2020-Feb-25 16:20:46.107263 DEBUG   [node_server] acceptLoop() is interrupted
+2020-Feb-25 16:20:46.107348 DEBUG   [node_server] acceptLoop finished
+2020-Feb-25 16:20:46.107508 DEBUG   [node_server] timedSyncLoop() is interrupted
+2020-Feb-25 16:20:46.107590 DEBUG   [node_server] timedSyncLoop finished
+2020-Feb-25 16:20:46.107762 DEBUG   [node_server] timeoutLoop() is interrupted
+2020-Feb-25 16:20:46.107941 DEBUG   [node_server] Handshake timed out
+2020-Feb-25 16:20:46.108172 DEBUG   [node_server] Connecting to 94.211.151.88:20440 (white=1, last_seen: never)...
+2020-Feb-25 16:20:46.135758 DEBUG   [node_server] Connection to 94.211.151.88:20440 failed: TcpConnector::connect, connection failed
+2020-Feb-25 16:20:46.136066 DEBUG   [node_server] Connecting to 94.214.85.66:20440 (white=1, last_seen: never)...
+2020-Feb-25 16:20:53.636541 DEBUG   [node_server] Connection to 94.214.85.66:20440 timed out, interrupt it
+2020-Feb-25 16:20:53.637009 DEBUG   [node_server] Connection timed out
+2020-Feb-25 16:20:53.637159 ERROR   [node_server] Failed to connect to any of seed peers, continuing without seeds
+2020-Feb-25 16:20:54.637418 DEBUG   [node_server] onIdle finished
+2020-Feb-25 16:20:54.637720 INFO    [node_server] NodeServer loop stopped
+2020-Feb-25 16:20:54.637893 INFO    [daemon] p2p net loop stopped
+2020-Feb-25 16:20:54.638087 INFO    [daemon] Stopping core rpc server...
+2020-Feb-25 16:20:54.734398 INFO    [daemon] Deinitializing p2p...
+2020-Feb-25 16:20:54.735346 DEBUG   [Core] transactionPoolCleaningProcedure has been interrupted
+2020-Feb-25 16:20:54.736036 INFO    [RocksDBWrapper] Closing DB.
+2020-Feb-25 16:20:54.777062 INFO    [daemon] Node stopped.
+2020-Feb-25 16:20:56.041434 INFO    [daemon] 
+
+
+ SpexyCoin v1.0.0.0
+ This software is distributed under the General Public License v3.0
+
+ Copyright 2020, The SpexyCoin Developers
+
+ Additional Copyright(s) may apply, please see the included LICENSE file for more information.
+ If you did not receive a copy of the LICENSE, please visit:
+ https://github.com/spexycoin/spexycoin/blob/master/LICENSE
+
+
+2020-Feb-25 16:20:56.041731 INFO    [daemon] Program Working Directory: "/home/kevin/SpexyCoin/build/src"
+2020-Feb-25 16:20:56.041933 INFO    [daemon] Loading Checkpoints for faster initial sync...
+2020-Feb-25 16:20:56.041991 INFO    [daemon] Loaded 0 default checkpoints
+2020-Feb-25 16:20:56.042070 INFO    [RocksDBWrapper] Opening DB in /home/kevin/.SpexyCoin/DB
+2020-Feb-25 16:20:56.170480 INFO    [RocksDBWrapper] DB opened in /home/kevin/.SpexyCoin/DB
+2020-Feb-25 16:20:56.171124 INFO    [daemon] Initializing core...
+2020-Feb-25 16:20:56.174520 INFO    [daemon] Core initialized OK
+2020-Feb-25 16:20:56.175133 INFO    [daemon] Initializing p2p server...
+2020-Feb-25 16:20:56.175834 INFO    [node_server] Binding on 0.0.0.0:20440
+2020-Feb-25 16:20:56.176164 INFO    [node_server] Net service bound on 0.0.0.0:20440
+2020-Feb-25 16:20:56.176355 INFO    [node_server] Attempting to add IGD port mapping.
+2020-Feb-25 16:20:57.358169 INFO    [node_server] Added IGD port mapping.
+2020-Feb-25 16:20:57.358428 INFO    [daemon] P2p server initialized OK
+2020-Feb-25 16:20:57.359130 INFO    [daemon] Starting core rpc server on address 127.0.0.1:20441
+2020-Feb-25 16:20:57.359525 INFO    [daemon] Starting p2p net loop...
+2020-Feb-25 16:20:57.359740 INFO    [node_server] Starting node_server
+2020-Feb-25 16:21:07.252248 INFO    [protocol] 
+2020-Feb-25 16:21:07.252493 INFO    [protocol] ==================[ SpexyCoin Tip! ]==================
+2020-Feb-25 16:21:07.252665 INFO    [protocol]  Always exit SpexyCoinDaemon with the "exit" command.
+2020-Feb-25 16:21:07.252882 INFO    [protocol]  Use "?" to see a list of available commands.
+2020-Feb-25 16:21:07.253093 INFO    [protocol]  Contact us at https://discord.gg/dVV4aQ2
+2020-Feb-25 16:21:07.253294 INFO    [protocol] ===================================================
+2020-Feb-25 16:21:07.253487 INFO    [protocol] 
+
+2020-Feb-25 16:21:07.253677 INFO    [protocol] New Top Block Detected: 1
+2020-Feb-25 16:21:18.000852 INFO    [node_server] Stop signal sent, please only EXIT or CTRL+C one time to avoid stalling the shutdown process.
+2020-Feb-25 16:21:18.001255 INFO    [node_server] Stopping NodeServer and its 1 connections...
+2020-Feb-25 16:21:18.001572 DEBUG   [node_server] acceptLoop() is interrupted
+2020-Feb-25 16:21:18.001782 DEBUG   [node_server] acceptLoop finished
+2020-Feb-25 16:21:18.002011 DEBUG   [node_server] onIdle() is interrupted
+2020-Feb-25 16:21:18.002208 DEBUG   [node_server] onIdle finished
+2020-Feb-25 16:21:18.002423 DEBUG   [node_server] timedSyncLoop() is interrupted
+2020-Feb-25 16:21:18.002623 DEBUG   [node_server] timedSyncLoop finished
+2020-Feb-25 16:21:18.002860 DEBUG   [node_server] timeoutLoop() is interrupted
+2020-Feb-25 16:21:18.003163 DEBUG   [node_server] [142.93.239.206:60775 INC] connectionHandler() inner context is interrupted
+2020-Feb-25 16:21:18.003417 DEBUG   [node_server] [142.93.239.206:60775 INC] Interrupt connection
+2020-Feb-25 16:21:18.003731 DEBUG   [node_server] [142.93.239.206:60775 INC] writeHandler finished
+2020-Feb-25 16:21:18.003963 TRACE   [node_server] [142.93.239.206:60775 INC] CLOSE CONNECTION
+2020-Feb-25 16:21:18.004197 TRACE   [protocol] Observed height updated: 52
+2020-Feb-25 16:21:18.004533 INFO    [node_server] NodeServer loop stopped
+2020-Feb-25 16:21:18.004719 INFO    [daemon] p2p net loop stopped
+2020-Feb-25 16:21:18.004894 INFO    [daemon] Stopping core rpc server...
+2020-Feb-25 16:21:18.111040 INFO    [daemon] Deinitializing p2p...
+2020-Feb-25 16:21:18.111772 DEBUG   [Core] transactionPoolCleaningProcedure has been interrupted
+2020-Feb-25 16:21:18.112427 INFO    [RocksDBWrapper] Closing DB.
+2020-Feb-25 16:21:18.163736 INFO    [daemon] Node stopped.
+2020-Feb-25 16:21:38.795425 INFO    [daemon] 
+
+
+ SpexyCoin v1.0.0.0
+ This software is distributed under the General Public License v3.0
+
+ Copyright 2020, The SpexyCoin Developers
+
+ Additional Copyright(s) may apply, please see the included LICENSE file for more information.
+ If you did not receive a copy of the LICENSE, please visit:
+ https://github.com/spexycoin/spexycoin/blob/master/LICENSE
+
+
+2020-Feb-25 16:21:38.795912 INFO    [daemon] Program Working Directory: "/home/kevin/SpexyCoin/build/src"
+2020-Feb-25 16:21:38.796027 INFO    [daemon] Loading Checkpoints for faster initial sync...
+2020-Feb-25 16:21:38.796070 INFO    [daemon] Loaded 0 default checkpoints
+2020-Feb-25 16:21:38.796212 INFO    [RocksDBWrapper] Opening DB in /home/kevin/.SpexyCoin/DB
+2020-Feb-25 16:21:38.797786 INFO    [RocksDBWrapper] DB not found in /home/kevin/.SpexyCoin/DB. Creating new DB...
+2020-Feb-25 16:21:39.018516 INFO    [daemon] Initializing core...
+2020-Feb-25 16:21:39.020663 INFO    [daemon] Core initialized OK
+2020-Feb-25 16:21:39.021141 INFO    [daemon] Initializing p2p server...
+2020-Feb-25 16:21:39.021572 INFO    [node_server] Generated new peer ID: 2472770644808848798
+2020-Feb-25 16:21:39.021726 INFO    [node_server] Binding on 0.0.0.0:20440
+2020-Feb-25 16:21:39.021960 INFO    [node_server] Net service bound on 0.0.0.0:20440
+2020-Feb-25 16:21:39.022104 INFO    [node_server] Attempting to add IGD port mapping.
+2020-Feb-25 16:21:40.400492 INFO    [node_server] Added IGD port mapping.
+2020-Feb-25 16:21:40.400731 INFO    [daemon] P2p server initialized OK
+2020-Feb-25 16:21:40.401133 INFO    [daemon] Starting core rpc server on address 127.0.0.1:20441
+2020-Feb-25 16:21:40.401505 INFO    [daemon] Starting p2p net loop...
+2020-Feb-25 16:21:40.401626 INFO    [node_server] Starting node_server
+2020-Feb-25 16:21:40.402174 INFO    [protocol] [142.93.239.206:43935 INC] Your SpexyCoin node is syncing with the network (1.89% complete) You are 52 blocks (0 days) behind the current peer you're connected to. Slow and steady wins the race! 
+2020-Feb-25 16:21:40.402386 INFO    [protocol] New Top Block Detected: 53
+2020-Feb-25 16:21:40.835598 INFO    [protocol] [142.93.239.206:43935 INC] Successfully synchronized with the SpexyCoin Network.
+2020-Feb-25 16:21:40.835691 INFO    [protocol] 
+2020-Feb-25 16:21:40.835742 INFO    [protocol] ==================[ SpexyCoin Tip! ]==================
+2020-Feb-25 16:21:40.835790 INFO    [protocol]  Always exit SpexyCoinDaemon with the "exit" command.
+2020-Feb-25 16:21:40.835839 INFO    [protocol]  Use "?" to see a list of available commands.
+2020-Feb-25 16:21:40.835881 INFO    [protocol]  Contact us at https://discord.gg/dVV4aQ2
+2020-Feb-25 16:21:40.835931 INFO    [protocol] ===================================================
+2020-Feb-25 16:21:40.835973 INFO    [protocol] 
+
+2020-Feb-25 16:25:06.002458 INFO    [node_server] Stop signal sent, please only EXIT or CTRL+C one time to avoid stalling the shutdown process.
+2020-Feb-25 16:25:06.002651 DEBUG   [node_server] onIdle finished
+2020-Feb-25 16:25:06.002702 INFO    [node_server] Stopping NodeServer and its 1 connections...
+2020-Feb-25 16:25:06.002777 DEBUG   [node_server] acceptLoop() is interrupted
+2020-Feb-25 16:25:06.002837 DEBUG   [node_server] acceptLoop finished
+2020-Feb-25 16:25:06.002896 DEBUG   [node_server] timedSyncLoop() is interrupted
+2020-Feb-25 16:25:06.002944 DEBUG   [node_server] timedSyncLoop finished
+2020-Feb-25 16:25:06.003000 DEBUG   [node_server] timeoutLoop() is interrupted
+2020-Feb-25 16:25:06.003069 DEBUG   [node_server] [142.93.239.206:43935 INC] connectionHandler() inner context is interrupted
+2020-Feb-25 16:25:06.003125 DEBUG   [node_server] [142.93.239.206:43935 INC] Interrupt connection
+2020-Feb-25 16:25:06.003191 DEBUG   [node_server] [142.93.239.206:43935 INC] writeHandler finished
+2020-Feb-25 16:25:06.003241 TRACE   [node_server] [142.93.239.206:43935 INC] CLOSE CONNECTION
+2020-Feb-25 16:25:06.003406 INFO    [node_server] NodeServer loop stopped
+2020-Feb-25 16:25:06.003455 INFO    [daemon] p2p net loop stopped
+2020-Feb-25 16:25:06.003502 INFO    [daemon] Stopping core rpc server...
+2020-Feb-25 16:25:06.098080 INFO    [daemon] Deinitializing p2p...
+2020-Feb-25 16:25:06.098424 DEBUG   [Core] transactionPoolCleaningProcedure has been interrupted
+2020-Feb-25 16:25:06.098734 INFO    [RocksDBWrapper] Closing DB.
+2020-Feb-25 16:25:06.277433 INFO    [daemon] Node stopped.

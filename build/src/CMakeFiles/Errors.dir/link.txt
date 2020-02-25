@@ -1,0 +1,2 @@
+gcc-ar qc libErrors.a  CMakeFiles/Errors.dir/errors/Errors.cpp.o CMakeFiles/Errors.dir/errors/ValidateParameters.cpp.o
+gcc-ranlib libErrors.a

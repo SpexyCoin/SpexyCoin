@@ -1,0 +1,9 @@
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/install.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/list_install_components.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/install/strip.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/install/local.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/rocksdb-shared.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/build_version.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/rocksdb.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/edit_cache.dir
+/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/rebuild_cache.dir

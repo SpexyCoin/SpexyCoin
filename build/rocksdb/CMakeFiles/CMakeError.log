@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15567/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15567.dir/build.make CMakeFiles/cmTC_15567.dir/build
+make[1]: Entering directory '/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15567.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_15567.dir/CheckSymbolExists.c.o   -c /home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_15567
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15567.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_15567.dir/CheckSymbolExists.c.o  -o cmTC_15567 
+/usr/bin/ld: CMakeFiles/cmTC_15567.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_15567.dir/build.make:87: cmTC_15567] Error 1
+make[1]: Leaving directory '/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_15567/fast] Error 2
+
+File /home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f8c8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8c8b.dir/build.make CMakeFiles/cmTC_f8c8b.dir/build
+make[1]: Entering directory '/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8c8b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f8c8b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f8c8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8c8b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f8c8b.dir/CheckFunctionExists.c.o  -o cmTC_f8c8b -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f8c8b.dir/build.make:87: cmTC_f8c8b] Error 1
+make[1]: Leaving directory '/home/kevin/SpexyCoin/build/rocksdb/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f8c8b/fast] Error 2
+
+

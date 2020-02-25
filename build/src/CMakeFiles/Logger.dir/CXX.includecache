@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/logger/Logger.h
+functional
+-
+string
+-
+vector
+-
+
+/home/kevin/SpexyCoin/src/logger/Logger.cpp
+logger/Logger.h
+-
+algorithm
+-
+ctime
+-
+iomanip
+-
+iostream
+-
+sstream
+-
+
