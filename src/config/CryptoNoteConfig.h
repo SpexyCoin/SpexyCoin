@@ -28,7 +28,7 @@ namespace CryptoNote
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER              =                    1'000'000'000;
         const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE           =                      500'000'000;
         const size_t   CRYPTONOTE_MAX_TX_SIZE                   =                      100'000'000;
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX  =                        299032727;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX  =                        116596887;
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW     =                               40;
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT       =                      60 * 60 * 2;
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V3    =            3 * DIFFICULTY_TARGET;
@@ -48,7 +48,7 @@ namespace CryptoNote
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
         const uint64_t GENESIS_BLOCK_REWARD                     =              100'000'000'00000000;
-        const char     GENESIS_COINBASE_TX_HEX[] = "012801ff0001808084fea6dee111026527c352979f0d11b0c132f2af549d7ccd82dfc6a9e91ba315e2fd4783e058f52101eebd053805c74c3f8351b46c86d063fef711b3ae61004eba5097d2da6af6bd56";
+        const char     GENESIS_COINBASE_TX_HEX[] = "012801ff0001808084fea6dee11102d936b6bd850387a5999bcb5f8171f6957130117f243891abaabdbc3f7fb04c482101c056455ad0e9b13346a1cc006499c1ab945eb64fdd5da8cb6d5022f36af9491f";
 
         static_assert(sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
@@ -271,8 +271,8 @@ namespace CryptoNote
     const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES           =              125; // 125 files
     const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT =                4; // 4 DB threads
 
-    const char        LATEST_VERSION_URL[] =     "https://github.com/spexycoin/spexycoin/releases/latest";
-    const std::string LICENSE_URL          = "https://github.com/spexycoin/spexycoin/blob/master/LICENSE";
+    const char        LATEST_VERSION_URL[] =     "https://github.com/SpexyCoin/SpexyCoin/releases/latest";
+    const std::string LICENSE_URL          = "https://github.com/SpexyCoin/SpexyCoin/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
         {
