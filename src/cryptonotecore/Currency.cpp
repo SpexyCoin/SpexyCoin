@@ -189,10 +189,7 @@ namespace CryptoNote
         uint64_t &reward,
         int64_t &emissionChange) const
     {
-        assert(alreadyGeneratedCoins <= m_moneySupply);
-        assert(m_emissionSpeedFactor > 0 && m_emissionSpeedFactor <= 8 * sizeof(uint64_t));
-
-        uint64_t baseReward = ((m_moneySupply - alreadyGeneratedCoins) >> m_emissionSpeedFactor);
+        uint64_t baseReward = 0'00100000;
 
         logger(TRACE) << "Base reward " << baseReward;
 
