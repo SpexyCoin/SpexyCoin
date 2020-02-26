@@ -189,7 +189,7 @@ namespace CryptoNote
         uint64_t &reward,
         int64_t &emissionChange) const
     {
-        uint64_t baseReward = 0'01000000;
+        uint64_t baseReward = 0;
 
         if (alreadyGeneratedCoins == 0 && m_genesisBlockReward != 0) {
             baseReward = m_genesisBlockReward;

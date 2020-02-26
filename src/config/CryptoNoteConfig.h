@@ -23,12 +23,12 @@ namespace CryptoNote
         const uint64_t DIFFICULTY_TARGET                        =                               10; // seconds
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY                             =   UINT64_C(101'000'000'00000000); // 100 million SPEXC
+        const uint64_t MONEY_SUPPLY                             =   UINT64_C(100'000'000'00000000); // 100 million SPEXC
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER              =                    1'000'000'000;
         const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE           =                      500'000'000;
         const size_t   CRYPTONOTE_MAX_TX_SIZE                   =                      100'000'000;
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX  =                        299032727;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX  =                        116596887;
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW     =                               40;
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT       =                      60 * 60 * 2;
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V3    =            3 * DIFFICULTY_TARGET;
@@ -66,7 +66,7 @@ namespace CryptoNote
         const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT                  =                                               8;
 
         /* Fixed fee */
-        const uint64_t MINIMUM_FEE                                       =                            UINT64_C(1'00000000);
+        const uint64_t MINIMUM_FEE                                       =                            UINT64_C(0'00050000);
 
         /* Fee per byte */
         const uint64_t FEE_PER_BYTE_V1_HEIGHT                            =                     CRYPTONOTE_MAX_BLOCK_NUMBER;
@@ -281,8 +281,8 @@ namespace CryptoNote
     };
 
     const char *const SEED_NODES[] = {
-        "142.93.239.206:34533", // MunchieHigh420 - 1
-          "94.211.137.5:34533", // MunchieHigh420 - 2
-          "94.214.85.66:34533", // Gabcraftia
+        "142.93.239.206:20440", // MunchieHigh420 - Trinity
+         "94.211.151.88:20440", // MunchieHigh420 - Main
+          "94.214.85.66:20440", // Gabcraftia
     };
 } // namespace CryptoNote
