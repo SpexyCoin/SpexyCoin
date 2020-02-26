@@ -235,9 +235,9 @@ namespace CryptoNote
     const uint64_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT        =              100; // by default, blocks count in blocks downloading
     const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT     =             1000;
 
-    const int      P2P_DEFAULT_PORT                          =            34533;
-    const int      RPC_DEFAULT_PORT                          =            34534;
-    const int      SERVICE_DEFAULT_PORT                      =            34535;
+    const int      P2P_DEFAULT_PORT                          =            20440;
+    const int      RPC_DEFAULT_PORT                          =            20441;
+    const int      SERVICE_DEFAULT_PORT                      =            20442;
 
     const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT            =             1000;
     const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT             =             5000;
@@ -276,7 +276,7 @@ namespace CryptoNote
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
         {
-            0x6d, 0x5f, 0xfd, 0xd6, 0x67, 0xf2, 0x5a, 0x9a, 0x7e, 0xdd, 0xb3, 0xb9, 0xe8, 0xa1, 0xc2, 0xf8
+            0x6c, 0x2f, 0xfd, 0xa6, 0x67, 0xf2, 0x5a, 0x9b, 0x7e, 0xdd, 0xb3, 0xb9, 0xf8, 0xa1, 0xc2, 0xf8
         }
     };
 
