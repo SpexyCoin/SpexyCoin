@@ -189,9 +189,10 @@ namespace CryptoNote
         uint64_t &reward,
         int64_t &emissionChange) const
     {
-        uint64_t baseReward = 0'00100000;
+        assert(alreadyGeneratedCoins <= m_moneySupply);
+        assert(m_emissionSpeedFactor > 0 && m_emissionSpeedFactor <= 8 * sizeof(uint64_t));
 
-        logger(TRACE) << "Base reward " << baseReward;
+        uint64_t baseReward = 0;
 
         if (alreadyGeneratedCoins == 0 && m_genesisBlockReward != 0) {
             baseReward = m_genesisBlockReward;

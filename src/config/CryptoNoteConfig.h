@@ -20,15 +20,15 @@ namespace CryptoNote
 {
     namespace parameters
     {
-        const uint64_t DIFFICULTY_TARGET                        =                               30; // seconds
+        const uint64_t DIFFICULTY_TARGET                        =                               10; // seconds
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY                             =   UINT64_C(101'000'000'00000000); // 100 million SPEXC
+        const uint64_t MONEY_SUPPLY                             =   UINT64_C(100'000'000'00000000); // 100 million SPEXC
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER              =                    1'000'000'000;
         const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE           =                      500'000'000;
         const size_t   CRYPTONOTE_MAX_TX_SIZE                   =                      100'000'000;
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX  =                        116596887;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX  =                        299032727;
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW     =                               40;
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT       =                      60 * 60 * 2;
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V3    =            3 * DIFFICULTY_TARGET;
@@ -47,15 +47,15 @@ namespace CryptoNote
         const unsigned EMISSION_SPEED_FACTOR                    =                               23;
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
-        const uint64_t GENESIS_BLOCK_REWARD                     =             100'000'000'00000000;
-        const char     GENESIS_COINBASE_TX_HEX[] = "012801ff0001808084fea6dee11102aee369549971213255c9aed76e2f3edb3914bfb54d2108044a9f9b9e275a5376210136b94f477c429b04ce61b585ba04afa879bbc23911b76018c2215edd33de5665";
+        const uint64_t GENESIS_BLOCK_REWARD                     =                     MONEY_SUPPLY;
+        const char     GENESIS_COINBASE_TX_HEX[] = "012801ff0001808084fea6dee111020ef13693c8cb6e48bee3ab5ed2211ad0fd18f0868bc20c02a0b22333dd2e055221017b8c832ada27ca383fa35fc07b813caf66f50c89e3125a27bf516ed81143683d";
 
         static_assert(sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP                           =                                      1582584204;
+        const uint64_t GENESIS_BLOCK_TIMESTAMP                           =                                      1573928094;
         const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW                   =                                             100;
         const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE         =                                         250'000;
         const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2      =                                          50'000;
@@ -66,7 +66,7 @@ namespace CryptoNote
         const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT                  =                                               8;
 
         /* Fixed fee */
-        const uint64_t MINIMUM_FEE                                       =                            UINT64_C(0'00050000);
+        const uint64_t MINIMUM_FEE                                       =                            UINT64_C(1'00000000);
 
         /* Fee per byte */
         const uint64_t FEE_PER_BYTE_V1_HEIGHT                            =                     CRYPTONOTE_MAX_BLOCK_NUMBER;
@@ -235,9 +235,9 @@ namespace CryptoNote
     const uint64_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT        =              100; // by default, blocks count in blocks downloading
     const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT     =             1000;
 
-    const int      P2P_DEFAULT_PORT                          =            20440;
-    const int      RPC_DEFAULT_PORT                          =            20441;
-    const int      SERVICE_DEFAULT_PORT                      =            20442;
+    const int      P2P_DEFAULT_PORT                          =            34533;
+    const int      RPC_DEFAULT_PORT                          =            34534;
+    const int      SERVICE_DEFAULT_PORT                      =            34535;
 
     const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT            =             1000;
     const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT             =             5000;
@@ -271,18 +271,18 @@ namespace CryptoNote
     const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES           =              125; // 125 files
     const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT =                4; // 4 DB threads
 
-    const char        LATEST_VERSION_URL[] =     "https://github.com/SpexyCoin/SpexyCoin/releases/latest";
-    const std::string LICENSE_URL          = "https://github.com/SpexyCoin/SpexyCoin/blob/master/LICENSE";
+    const char        LATEST_VERSION_URL[] =     "https://github.com/spexycoin/spexycoin/releases/latest";
+    const std::string LICENSE_URL          = "https://github.com/spexycoin/spexycoin/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
         {
-            0x6d, 0x5f, 0xfd, 0xa6, 0x67, 0xa2, 0x5a, 0x9a, 0x7e, 0xdd, 0xb3, 0xc9, 0xe8, 0xa1, 0xc2, 0xf8
+            0x6d, 0x5f, 0xfd, 0xd6, 0x67, 0xf2, 0x5a, 0x9a, 0x7e, 0xdd, 0xb3, 0xb9, 0xe8, 0xa1, 0xc2, 0xf8
         }
     };
 
     const char *const SEED_NODES[] = {
-        "142.93.239.206:20440", // MunchieHigh420 - Trinity
-         "94.211.151.88:20440", // MunchieHigh420 - Main
-          "94.214.85.66:20440", // Gabcraftia
+        "142.93.239.206:34533", // MunchieHigh420 - 1
+          "94.211.137.5:34533", // MunchieHigh420 - 2
+          "94.214.85.66:34533", // Gabcraftia
     };
 } // namespace CryptoNote
