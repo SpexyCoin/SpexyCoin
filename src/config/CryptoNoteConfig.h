@@ -23,7 +23,7 @@ namespace CryptoNote
         const uint64_t DIFFICULTY_TARGET                        =                               10; // seconds
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY                             =   UINT64_C(100'000'000'00000000); // 100 million SPEXC
+        const uint64_t MONEY_SUPPLY                             =   UINT64_C(101'000'000'00000000); // 100 million SPEXC
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER              =                    1'000'000'000;
         const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE           =                      500'000'000;
@@ -55,7 +55,7 @@ namespace CryptoNote
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP                           =                                      1573928094;
+        const uint64_t GENESIS_BLOCK_TIMESTAMP                           =                                      1582741514;
         const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW                   =                                             100;
         const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE         =                                         250'000;
         const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2      =                                          50'000;
